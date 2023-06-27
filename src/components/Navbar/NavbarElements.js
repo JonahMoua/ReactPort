@@ -3,9 +3,10 @@ import {Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 
 
-export const Nav = styled.div `
+export const Nav = styled.nav`
+background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
 height: 81px;
-margin-top: -80px;
+// margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -21,7 +22,7 @@ transition: 0.8s all ease;
 `
 
 export const NavLogo = styled(LinkR)`
-color: white;
+color: black;
 justify-self: flex-start;
 cursor: pointer;
 font-size: 1.5rem;
@@ -56,4 +57,23 @@ margin-right: -22px;
 
 export const NavItem = styled.li`
 height: 80px;
+`
+
+export const NavLinks = styled(LinkS)`
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+
+&:hover{
+    color: #004fff;
+    transition: 0.2s ease-in-out;
+}
+
+&.active {
+    border-bottom: 3px solid #004fff;
+}
 `

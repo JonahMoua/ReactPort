@@ -1,29 +1,49 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import {
   Nav,
   NavContainer,
   NavMenu,
   NavItem,
-  NavLogo
+  NavLinks,
+  NavLogo,
 } from "./NavbarElements"
 
 export const Navbar = () => {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+}
+
   return (
+    <>
     <Nav>
+
       <NavContainer>
-        <NavLogo>About Me</NavLogo>
+
+        <NavLogo to='/' onClick={toggleHome}>About Me</NavLogo>
+
         <NavMenu>
+
           <NavItem>
-            Projects
+
+            <NavLinks>Projects</NavLinks>
+
           </NavItem>
+
           <NavItem>
-            ShowCase
+
+            <NavLinks>Showcase</NavLinks>
+
           </NavItem>
 
         </NavMenu>
+
       </NavContainer>
+
     </Nav>
+    </>
   )
 }
 
-export default Navbar
+export default Navbar;
