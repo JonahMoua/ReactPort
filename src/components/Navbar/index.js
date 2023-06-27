@@ -36,19 +36,19 @@ export const Navbar = () => {
 
       <NavContainer>
 
-        <NavLogo to='/' onClick={toggleHome}>About Me</NavLogo>
+        <NavLogo to='/' onClick={toggleHome} scrollNav={scrollNav}>Jonah Moua</NavLogo>
 
         <NavMenu>
 
           <NavItem>
 
-            <NavLinks>Projects</NavLinks>
+            <NavLinks scrollNav={scrollNav}>Projects</NavLinks>
 
           </NavItem>
 
           <NavItem>
 
-            <NavLinks>Showcase</NavLinks>
+            <NavLinks scrollNav={scrollNav}>Showcase</NavLinks>
 
           </NavItem>
 
