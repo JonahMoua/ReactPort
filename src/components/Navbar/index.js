@@ -1,5 +1,5 @@
-import React from 'react'
-import { animateScroll as scroll } from 'react-scroll'
+import React, {useState, useEffect} from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavContainer,
@@ -9,7 +9,22 @@ import {
   NavLogo,
 } from "./NavbarElements"
 
+
 export const Navbar = () => {
+
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 80) {
+    setScrollNav(true) 
+    } else { 
+        setScrollNav(false)
+    }
+}
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
 
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -17,7 +32,7 @@ export const Navbar = () => {
 
   return (
     <>
-    <Nav>
+    <Nav scrollNav={scrollNav}>
 
       <NavContainer>
 

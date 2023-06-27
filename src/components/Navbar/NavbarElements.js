@@ -60,7 +60,7 @@ height: 80px;
 `
 
 export const NavLinks = styled(LinkS)`
-color: #fff;
+color: black;
 display: flex;
 align-items: center;
 text-decoration: none;
