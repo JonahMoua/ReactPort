@@ -1,7 +1,29 @@
 import React from 'react'
+import {
+  Nav,
+  NavContainer,
+  NavMenu,
+  NavItem,
+  NavLogo
+} from "./NavbarElements"
 
-export default function NavbarElements() {
+export const Navbar = () => {
   return (
-    <div>NavbarElements</div>
+    <Nav>
+      <NavContainer>
+        <NavLogo>About Me</NavLogo>
+        <NavMenu>
+          <NavItem>
+            Projects
+          </NavItem>
+          <NavItem>
+            ShowCase
+          </NavItem>
+
+        </NavMenu>
+      </NavContainer>
+    </Nav>
   )
 }
+
+export default Navbar
