@@ -23,3 +23,44 @@ z-index: 1;
 
 }
 `
+
+export const HeroLeftColumn = styled.div`
+flex: 1;
+justify-content: center;
+align-items: center;
+`
+
+export const HeroRightColumn = styled.div`
+flex: 1;
+justify-content: center;
+align-items: center;
+`
+
+export const ImgWrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: auto;
+`
+export const Img = styled.img`
+width: 550px;
+height: 800px;
+margin: 0 0 10px 0;
+padding-right: 0; 
+border-radius: 20px;
+`
+
+export const TextWrapper = styled.div`
+display: grid;
+grid-template-rows: 1fr 1fr;
+
+`
+
+export const TextRow1 = styled.div`
+align-items: flex-start;
+`
+
+export const TextRow2 = styled.div`
+display: flex;
+`
