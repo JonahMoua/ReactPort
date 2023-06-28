@@ -5,9 +5,10 @@ HeroLeftColumn,
 HeroRightColumn,
 ImgWrapper,
 Img,
-TextWrapper,
 TextRow1,
-TextRow2
+TextRow2,
+Text
+
 
 } from './HeroSectionElements'
 
@@ -16,20 +17,25 @@ const HeroSection = () => {
     <>
     <HeroContainer id='home'>
           <HeroLeftColumn>
-              <TextWrapper>
+
                 <TextRow1>
-                  <h1>Hi</h1>
+                      <Text>
+                        Hello
+                      </Text>
                 </TextRow1>
                 <TextRow2>
-                  <h1>world I love you</h1>
+                      <Text>
+                        World
+                      </Text>
                 </TextRow2>
-              </TextWrapper>
+
             </HeroLeftColumn>
 
             <HeroRightColumn>
-            <ImgWrapper>
+              <ImgWrapper>
                 <Img src={picImg} />
               </ImgWrapper>
+              
             </HeroRightColumn>
     </HeroContainer>
     </>
