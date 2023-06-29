@@ -40,6 +40,12 @@ export const Navbar = () => {
 
         <NavMenu>
 
+        <NavItem>
+
+            <NavLinks scrollNav={scrollNav}>Home</NavLinks>
+
+          </NavItem>
+
           <NavItem>
 
             <NavLinks scrollNav={scrollNav}>Projects</NavLinks>
@@ -49,6 +55,12 @@ export const Navbar = () => {
           <NavItem>
 
             <NavLinks scrollNav={scrollNav}>Showcase</NavLinks>
+
+          </NavItem>
+
+          <NavItem>
+
+            <NavLinks scrollNav={scrollNav}>Contact</NavLinks>
 
           </NavItem>
 
