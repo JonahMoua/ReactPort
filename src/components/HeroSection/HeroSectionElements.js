@@ -34,11 +34,16 @@ justify-content: center;
 align-items: center;
 width: 100%;
 height: auto;
+
 `
 export const Img = styled.img`
 width: 550px;
 height: 800px;
 border-radius: 20px;
+
+&:hover {
+    transform: scale(1.1);
+}
 `
 
 export const TextRow1 = styled.div`
@@ -49,6 +54,14 @@ width: 500px;
 display: flex;
 justify-content: center;
 align-items: center;
+
+transform: ${(isFlipped1) => (isFlipped1 ? 'rotateY(180deg)' : 'rotateY(0)')};
+transition: transform 0.6s;
+cursor: pointer;
+
+&:hover {
+    transform: scale(1.1);
+}
 `
 
 export const TextRow2 = styled.div`
@@ -58,6 +71,14 @@ height: 50%;
 display: flex;
 justify-content: center;
 align-items: center;
+
+transform: ${(isFlipped2) => (isFlipped2 ? 'rotateY(180deg)' : 'rotateY(0)')};
+transition: transform 0.6s;
+cursor: pointer;
+
+&:hover {
+    transform: scale(1.1);
+}
 `
 export const Text = styled.h1`
 
