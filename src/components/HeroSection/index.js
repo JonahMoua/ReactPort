@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {FaLinkedin, FaGithub} from 'react-icons/fa'
 import picImg from '../../images/pic.JPG'
 import { HeroContainer,
 HeroLeftColumn,
@@ -7,7 +8,10 @@ ImgWrapper,
 Img,
 TextWrapper,
 Text,
-TextWrapperFooter
+TextWrapperFooter,
+SocialMediaWrap,
+SocialIcons,
+SocialIconLink
 
 
 } from './HeroSectionElements'
@@ -21,7 +25,20 @@ const HeroSection = () => {
           <HeroLeftColumn>
               <TextWrapper>
               <h1>hello</h1>
-              <TextWrapperFooter>  </TextWrapperFooter>
+                  <TextWrapperFooter>  
+                    <SocialMediaWrap>
+                      <SocialIcons>
+                        <SocialIconLink href='//www.linkedin.com/in/jonahmoua1' target='_blank' aria-label='Linkedin'>
+                              <FaLinkedin />
+                          </SocialIconLink>
+
+                          <SocialIconLink href='//www.github.com/JonahMoua' target='_blank' aria-label='Github'>
+                              <FaGithub />
+                          </SocialIconLink>
+
+                      </SocialIcons>
+                    </SocialMediaWrap>
+                  </TextWrapperFooter>
               </TextWrapper>
             </HeroLeftColumn>
 

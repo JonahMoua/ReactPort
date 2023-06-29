@@ -38,8 +38,30 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 100px; 
-background-color: black; 
+// background-color: black; 
 border-radius: 20px;
+`
+
+export const SocialMediaWrap = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 1100px;
+margin: 40px auto 0 auto;
+
+
+`
+
+export const SocialIcons = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 240px;
+`
+
+export const SocialIconLink = styled.a`
+color: blue;
+font-size: 24px;
 `
 
 export const HeroRightColumn = styled.div`
