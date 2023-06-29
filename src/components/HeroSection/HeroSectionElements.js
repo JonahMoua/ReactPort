@@ -38,8 +38,6 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 100px; 
-// background-color: black; 
-border-radius: 20px;
 `
 
 export const SocialMediaWrap = styled.div`
@@ -48,7 +46,6 @@ justify-content: center;
 align-items: center;
 max-width: 1100px;
 margin: 40px auto 0 auto;
-
 
 `
 
@@ -89,7 +86,22 @@ height: 600px;
     transform: scale(1.1);
 }
 `
-
-export const Text = styled.h1`
+export const Header = styled.div`
+display: flex;
+justify-content: center;
+padding: 20px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
 
 `
+export const Heading = styled.h1`
+font-size: 48px;
+line-height: 1.1;
+font-weight: 600;
+color: black;
+
+}
+`
+

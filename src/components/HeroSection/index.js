@@ -11,7 +11,9 @@ Text,
 TextWrapperFooter,
 SocialMediaWrap,
 SocialIcons,
-SocialIconLink
+SocialIconLink,
+Heading,
+Header
 
 
 } from './HeroSectionElements'
@@ -24,7 +26,10 @@ const HeroSection = () => {
     <HeroContainer id='home'>
           <HeroLeftColumn>
               <TextWrapper>
-              <h1>hello</h1>
+                <Header>
+                  <Heading> About Me </Heading>
+                    </Header>
+                    Hi
                   <TextWrapperFooter>  
                     <SocialMediaWrap>
                       <SocialIcons>
@@ -42,6 +47,7 @@ const HeroSection = () => {
               </TextWrapper>
             </HeroLeftColumn>
 
+
             <HeroRightColumn>
               
               <ImgWrapper>
@@ -49,6 +55,8 @@ const HeroSection = () => {
               </ImgWrapper>
               
             </HeroRightColumn>
+
+            
     </HeroContainer>
     </>
   )
