@@ -28,7 +28,7 @@ const HeroSection = () => {
                 <Header>
                   <Heading> About Me </Heading>
                     </Header>
-                    Hi
+                    home
                   <TextWrapperFooter>  
                     <SocialMediaWrap>
                       <SocialIcons>

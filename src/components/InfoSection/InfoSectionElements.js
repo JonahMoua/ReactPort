@@ -50,6 +50,7 @@ background: black;
 border-radius: 20px;
 height: 200px;
 position: relative;
+
 `
 
 export const TextHeader = styled.div`

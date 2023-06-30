@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-background: lightblue;
 display: flex;
-// justify-content: center;
-// align-items: center;
-padding: 0 0px;
 height: 1050px;
-position: relative;
-z-index: 1;
+width: 100%;
+max-width: 1100px;
+margin-right: auto;
+margin-left: auto;
+padding: 0 24px;
+align-items: center;
 
 }
 `
@@ -22,14 +22,12 @@ justify-content: center;
 
 export const TextWrapper = styled.div`
 display: flex;
+flex-direction: column;
 align-items: center;
-justify-content: center;
-background: white;
-width: 50%;
-height: 50%;
+justify-content: flex-start;
+min-height: 200px;
 border-radius: 20px;
 position: relative;
-// padding-bottom: 50px;
 `
 
 export const TextWrapperFooter = styled.div`
@@ -51,7 +49,7 @@ margin: 40px auto 0 auto;
 
 export const SocialIcons = styled.div`
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 align-items: center;
 width: 240px;
 `
@@ -88,12 +86,8 @@ height: 600px;
 `
 export const Header = styled.div`
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 padding: 20px;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
 `
 export const Heading = styled.h1`
 font-size: 48px;
