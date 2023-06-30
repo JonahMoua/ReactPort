@@ -1,4 +1,5 @@
 import React from 'react'
+import {FaGithub} from 'react-icons/fa'
 import img from '../../images/pic.JPG'
 import { InfoSectionContainer,
 InfoRow,
@@ -6,7 +7,13 @@ Column1,
 Column2,
 Img,
 ImgWrap,
-TextWrap } from './InfoSectionElements'
+TextWrap,
+TextHeader,
+TextFooter,
+SocialMediaWrap,
+SocialIcons,
+SocialIconLink,
+Heading} from './InfoSectionElements'
 
 const InfoSection = () => {
   return (
@@ -16,8 +23,25 @@ const InfoSection = () => {
 
             <Column1>
               <TextWrap>
-                hi
+                <TextHeader> 
+                  <Heading>Description</Heading>
+                   </TextHeader>
+
+                   <TextFooter>
+                   <SocialMediaWrap>
+                      <SocialIcons>
+
+                          <SocialIconLink href='//www.github.com/JonahMoua' target='_blank' aria-label='Github'>
+                              <FaGithub />
+
+                          </SocialIconLink>
+
+                      </SocialIcons>
+                    </SocialMediaWrap>
+                   </TextFooter>
               </TextWrap>
+
+
             </Column1>
 
             <Column2>

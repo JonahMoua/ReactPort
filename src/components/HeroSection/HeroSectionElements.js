@@ -94,7 +94,6 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-
 `
 export const Heading = styled.h1`
 font-size: 48px;
