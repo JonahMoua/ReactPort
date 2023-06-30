@@ -16,18 +16,18 @@ SocialIconLink,
 Heading,
 } from './InfoSectionElements'
 
-const InfoSection = () => {
+const InfoSection = ({imgStart, title}) => {
   return (
     <>
     <InfoSectionContainer>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
 
             <Column1>
               <TextWrap>
                 <TextHeader> 
-                  <Heading>Title</Heading>
+                  <Heading>{title}</Heading>
                    </TextHeader>
-                      hi
+                      <p>HI</p>
 
                    <TextFooter>
                    <SocialMediaWrap>
