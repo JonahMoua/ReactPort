@@ -95,6 +95,5 @@ line-height: 1.1;
 font-weight: 600;
 color: black;
 
-}
 `
 

@@ -13,7 +13,8 @@ TextFooter,
 SocialMediaWrap,
 SocialIcons,
 SocialIconLink,
-Heading} from './InfoSectionElements'
+Heading,
+} from './InfoSectionElements'
 
 const InfoSection = () => {
   return (
@@ -24,8 +25,9 @@ const InfoSection = () => {
             <Column1>
               <TextWrap>
                 <TextHeader> 
-                  <Heading>Description</Heading>
+                  <Heading>Title</Heading>
                    </TextHeader>
+                      hi
 
                    <TextFooter>
                    <SocialMediaWrap>

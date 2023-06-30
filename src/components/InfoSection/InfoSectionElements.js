@@ -42,27 +42,24 @@ export const Img = styled.img`
 width: 100%;
 margin: 0 0 10px 0;
 padding-right: 0; 
+border-radius: 20px;
 `
 
 export const TextWrap = styled.div`
 display: flex;
-background: black;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+min-height: 200px;
 border-radius: 20px;
-height: 200px;
 position: relative;
 
 `
 
 export const TextHeader = styled.div`
 display: flex;
-color: red;
-justify-content: center;
+justify-content: flex-start;
 padding: 20px;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-z-index: 2;
 `
 
 export const TextFooter = styled.div`
@@ -98,5 +95,7 @@ export const Heading = styled.h1`
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: white;
+color: black;
 `
+
+
