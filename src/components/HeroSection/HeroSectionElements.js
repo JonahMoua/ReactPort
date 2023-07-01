@@ -79,6 +79,7 @@ border-radius: 50%;
 object-fit: cover;
 width: 600px;
 height: 600px;
+transition: 0.3s;
 
 &:hover {
     transform: scale(1.1);
