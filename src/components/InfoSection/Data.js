@@ -10,7 +10,7 @@ import capital1 from '../../images/capital1.png'
 
 
 export const homeObjOne = {
-    id: 'about',
+    id: 'project',
     title: 'Premium Bank',
     headLine: 'Unlimited Transaction with zero fees',
     description:'Get access to our exclusive app that allows you to send unlimited transaction without getting charged any fees.',
@@ -29,7 +29,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'discover',
+    id: '',
     title: 'Unlimited',
     headLine: 'Unlimited Transaction with zero fees',
     description:'Get access to our exclusive app that allows you to send unlimited transaction without getting charged any fees.',
@@ -45,7 +45,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-    id: 'signup',
+    id: '',
     title: 'Premium Bank',
     headLine: 'Creating an account is extremely easy',
     description:'Get everything set up and ready in under 10 minutes. All you need to do is add your information and you are ready to go.',

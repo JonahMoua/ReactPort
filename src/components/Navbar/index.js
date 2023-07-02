@@ -42,19 +42,23 @@ export const Navbar = () => {
 
         <NavItem>
 
-            <NavLinks scrollNav={scrollNav}>Home</NavLinks>
+            <NavLinks scrollNav={scrollNav} to='home'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-79}>Home</NavLinks>
 
           </NavItem>
 
           <NavItem>
 
-            <NavLinks scrollNav={scrollNav}>Projects</NavLinks>
-
-          </NavItem>
-
-          <NavItem>
-
-            <NavLinks scrollNav={scrollNav}>Showcase</NavLinks>
+            <NavLinks scrollNav={scrollNav} to='project'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-79}>Projects</NavLinks>
 
           </NavItem>
 

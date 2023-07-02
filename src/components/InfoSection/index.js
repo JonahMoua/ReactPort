@@ -3,12 +3,12 @@ import { FaGithub } from 'react-icons/fa';
 import { InfoSectionContainer, InfoRow, Column1, Column2, ImgWrap, TextWrap, TextHeader, TextFooter, SocialMediaWrap, SocialIcons, SocialIconLink, Heading } from './InfoSectionElements';
 import Slideshow from './Slideshow';
 
-const InfoSection = ({ imgStart, title, link, img }) => {
+const InfoSection = ({ imgStart, title, link, img, id }) => {
 
 
   return (
     <>
-      <InfoSectionContainer>
+      <InfoSectionContainer id={id}>
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrap>
