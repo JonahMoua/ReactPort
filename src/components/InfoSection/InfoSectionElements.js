@@ -9,6 +9,9 @@ margin-right: auto;
 margin-left: auto;
 padding: 0 24px;
 align-items: center;
+
+
+background: ${({lightBg}) => (lightBg ? 'white' : '#010606')};
 `
 
 
@@ -96,5 +99,11 @@ font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
 color: black;
+
+color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+`
+
+export const Description = styled.p`
+color: ${({ lightTextDesc }) => (lightTextDesc ? '#f7f8fa' : '#010606')};
 `
 

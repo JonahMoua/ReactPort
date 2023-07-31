@@ -1,21 +1,19 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { InfoSectionContainer, InfoRow, Column1, Column2, ImgWrap, TextWrap, TextHeader, TextFooter, SocialMediaWrap, SocialIcons, SocialIconLink, Heading } from './InfoSectionElements';
+import { InfoSectionContainer, InfoRow, Column1, Column2, ImgWrap, TextWrap, TextHeader, TextFooter, SocialMediaWrap, SocialIcons, SocialIconLink, Heading, Description } from './InfoSectionElements';
 import Slideshow from './Slideshow';
 
-const InfoSection = ({ imgStart, title, link, img, id }) => {
+const InfoSection = ({ imgStart, title, link, img, id, lightBg, lightText, lightTextDesc }) => {
 
 
   return (
     <>
-      <InfoSectionContainer id={id}>
+      <InfoSectionContainer lightBg = {lightBg} id={id}>
         <InfoRow imgStart={imgStart}>
           <Column1>
-            <TextWrap>
-              <TextHeader>
-                <Heading>{title}</Heading>
-              </TextHeader>
-              hi
+            <TextWrap >
+                <Heading lightText = {lightText}>{title}</Heading> 
+                <Description lightTextDesc = {lightTextDesc}>hif</Description>
               <TextFooter>
                 <SocialMediaWrap>
                   <SocialIcons>
