@@ -28,14 +28,6 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle> Get to Know Us! </FooterLinkTitle>
-                            <FooterLink to='/'>How it works</FooterLink>
-                            <FooterLink to='/'>Testimonials</FooterLink>
-                            <FooterLink to='/'>Careers</FooterLink>
-                            <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Terms of Services</FooterLink>                       
-                    </FooterLinkItems>
-                    <FooterLinkItems>
                         <FooterLinkTitle> Contact Us </FooterLinkTitle>
                             <FooterLink to='/'>Contact</FooterLink>
                             <FooterLink to='/'>Support</FooterLink>
@@ -51,14 +43,6 @@ const Footer = () => {
                             <FooterLink to='/'>Commercial</FooterLink>
                             <FooterLink to='/'>CreditWise</FooterLink>
                             <FooterLink to='/'>Software</FooterLink>                       
-                    </FooterLinkItems>
-                    <FooterLinkItems>
-                        <FooterLinkTitle> Legal </FooterLinkTitle>
-                            <FooterLink to='/'>Privacy</FooterLink>
-                            <FooterLink to='/'>Patriot Act Certification</FooterLink>
-                            <FooterLink to='/'>Wolfsberg Questionnaire</FooterLink>
-                            <FooterLink to='/'>Subpoena Policy</FooterLink>
-                            <FooterLink to='/'>Additional Disclosures</FooterLink>                       
                     </FooterLinkItems>
                 </FooterLinksWrapper>
             </FooterLinksContainer>
