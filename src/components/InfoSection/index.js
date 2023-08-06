@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { InfoSectionContainer, InfoRow, Column1, Column2, ImgWrap, TextWrap, TextHeader, TextFooter, SocialMediaWrap, SocialIcons, SocialIconLink, Heading, Description } from './InfoSectionElements';
+import { InfoSectionContainer, InfoRow, Column1, Column2, ImgWrap, TextWrap, TextHeader, TextFooter, SocialMediaWrap, SocialIcons, SocialIconLink, Heading, Description, InfoWrapper } from './InfoSectionElements';
 import Slideshow from './Slideshow';
 
 const InfoSection = ({ imgStart, title, link, img, id, lightBg, lightText, lightTextDesc }) => {
@@ -9,6 +9,7 @@ const InfoSection = ({ imgStart, title, link, img, id, lightBg, lightText, light
   return (
     <>
       <InfoSectionContainer lightBg = {lightBg} id={id}>
+        <InfoWrapper>
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrap >
@@ -31,6 +32,7 @@ const InfoSection = ({ imgStart, title, link, img, id, lightBg, lightText, light
             </ImgWrap>
           </Column2>
         </InfoRow>
+        </InfoWrapper>
       </InfoSectionContainer>
     </>
   );
